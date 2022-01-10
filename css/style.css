@@ -1,0 +1,122 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+.info, .menu {
+    padding: 0em 10.0em;
+}
+
+.menu {
+    background-color: skyblue;
+    display: flex;
+    align-items: center;
+}
+
+.titulo {
+    flex: 1;
+    padding: 0.5em 0em;
+    color: white;
+    font-size: 2.5em;
+}
+
+.menucito {
+    display: flex;
+    padding: 0.5em 0em;
+}
+
+.menucito > li {
+    list-style: none;
+}
+.menucito > li > a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding-left: 1.2em;
+}
+
+.informacion {
+    display: flex;
+    padding: 1.2em 0em;
+    align-items: center;
+    border-bottom: 2px solid black;
+}
+
+.informacion > h2 {
+    flex : 1;
+}
+
+.informacion > p {
+    margin-right: 1.0em;
+}
+
+.dias {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cuadro {
+    background-color: #ccc;
+    margin: 0.5em 0.0em;
+    padding: 0.8em;
+    width: 170px;
+}
+
+.cuadro > img {
+    border-radius: 50%;
+    width: 100px;
+    align-content: center;
+    display: block;
+    margin: 0 auto;
+}
+
+.dia {
+    text-align:center;
+    padding: 1.0em 0em;
+}
+
+.tiempo {
+    text-align: center;
+    margin: 1.5em 0em;
+}
+
+.temperaturas{
+    display: flex;
+    justify-content: space-between;
+}
+
+.maximo {
+    color: red;
+}
+
+.minimo {
+    color: blue;
+}
+
+.mensaje {
+    border: 2px solid black;
+    margin: 0.5em 10em;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+}
+
+.mensajeCookie {
+    margin: 1.2em 0.8em;
+}
+
+#buttonCookie {
+    margin: 0em 2.0em;
+    padding: 0.5em 2.0em;
+    background-color: cornflowerblue;
+    color: white;
+    border: 2px solid black;
+    box-shadow: 2px 2px black;
+    width: 150px;
+}
+
+.imagenCookie {
+    padding: 0.5em;
+}

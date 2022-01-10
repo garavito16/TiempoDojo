@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div class="pagina">
+        <div class="mensaje">
+            <img class="imagenCookie" src="./img/cookie.png" alt="imagen de cookies">
+            <div class="mensajeCookie">
+                <h4>Stop! Cookie time</h4>
+                <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and yo analyse our trafific. <a href="#">Read More ...</a></p>
+            </div>
+            <button onclick="aceptar()" id="buttonCookie">I Accept</button>
+        </div>
+        <div class="menu">
+            <h1 class="titulo">DojoWeather</h1>
+            <ul class="menucito">
+                <li>
+                    <a onclick="alerta()" href="#">Burbank</a>
+                </li>
+                <li>
+                    <a onclick="alerta()" href="#">Chicago</a>
+                </li>
+                <li>
+                    <a onclick="alerta()" href="#">Dallas</a>
+                </li>
+            </ul>
+        </div>
+        <div class="info">
+            <div class="informacion">
+                <h2>San Jose</h2>
+                <p>show temperatura in</p>
+                <select onchange="cambiarTemperaturas(this)" name="" id="temperatura">
+                    <option value="c">ºC</option>
+                    <option value="f">ºF</option>
+                </select>
+            </div>
+            <div class="dias">
+                <div class="cuadro">
+                    <h3 class="dia">Today</h3>
+                    <img src="./img/some_rain.png" alt="imagen de lluvia">
+                    <p class="tiempo">Some rain</p>
+                    <div class="temperaturas">
+                        <span class="maximo">24º</span>
+                        <span class="minimo">18º</span>
+                    </div>
+                </div>
+                <div class="cuadro">
+                    <h3 class="dia">Tomorrow</h3>
+                    <img src="./img/some_sun.png" alt="imagen de sol">
+                    <p class="tiempo">Some rain</p>
+                    <div class="temperaturas">
+                        <span class="maximo">27º</span>
+                        <span class="minimo">19º</span>
+                    </div>
+                </div>
+                <div class="cuadro">
+                    <h3 class="dia">Friday</h3>
+                    <img src="./img/some_clouds.png" alt="imagen de nubes">
+                    <p class="tiempo">Some rain</p>
+                    <div class="temperaturas">
+                        <span class="maximo">21º</span>
+                        <span class="minimo">16º</span>
+                    </div>
+                </div>
+                <div class="cuadro">
+                    <h3 class="dia">Saturday</h3>
+                    <img src="./img/some_sun.png" alt="imagen de sol">
+                    <p class="tiempo">Some rain</p>
+                    <div class="temperaturas">
+                        <span class="maximo">26º</span>
+                        <span class="minimo">21º</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+</html>
